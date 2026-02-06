@@ -37,7 +37,7 @@ def register_handlers(bot_client, user_client, db_pool=None):
             "How it works:\n"
             "1. Send a public post link\n"
             "2. Choose the pool size (top 5/10/20/50/100 or all)\n"
-            "3. Tap the 'Pick winner' to select a random comment"
+            "3. Tap 'Pick winner' to select a random comment"
             "\n\n"
             "Developer: https://t.me/braveram"
         )
