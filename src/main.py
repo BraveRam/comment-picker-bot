@@ -7,7 +7,7 @@ from db import create_pool, ensure_schema
 
 async def main():
     if not BOT_TOKEN:
-        raise RuntimeError("BOT_TOKEN is missing from .env")
+        raise RuntimeError("BOT_TOKEN is missing from .env.")
     if not API_ID or not API_HASH:
         raise RuntimeError("API_ID or API_HASH is missing from .env")
 
