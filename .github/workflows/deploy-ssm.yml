@@ -27,7 +27,7 @@ jobs:
             --instance-ids "$INSTANCE_ID" \
             --document-name "AWS-RunShellScript" \
             --comment "Deploy comment-picker-bot from main" \
-            --parameters commands="sudo -u ubuntu -H bash -lc 'cd /home/ubuntu/comment-picker-bot && git config --global --add safe.directory /home/ubuntu/comment-picker-bot && git fetch origin main && git reset --hard origin/main && pm2 restart picko'" \
+            --parameters 'commands=["sudo chown -R ubuntu:ubuntu /home/ubuntu/comment-picker-bot","sudo -u ubuntu -H bash -lc '\''git config --global --add safe.directory /home/ubuntu/comment-picker-bot'\''","sudo -u ubuntu -H bash -lc '\''cd /home/ubuntu/comment-picker-bot && git fetch origin main && git reset --hard origin/main'\''","sudo -u ubuntu -H bash -lc '\''export PM2_HOME=/home/ubuntu/.pm2; pm2 restart picko'\''"]' \
             --timeout-seconds 600 \
             --query "Command.CommandId" \
             --output text)"

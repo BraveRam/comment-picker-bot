@@ -28,7 +28,7 @@ def register_handlers(bot_client, user_client, db_pool=None):
             )
         await event.reply(
             "Welcome! Send me a public post link like `https://t.me/channel/123` "
-            "and I'll pick a random comment winner."
+            "and I'll pick a random comment winner;)"
         )
 
     @bot_client.on(events.NewMessage(incoming=True, pattern=r"^/help$"))
