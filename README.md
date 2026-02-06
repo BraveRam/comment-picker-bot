@@ -1,5 +1,5 @@
 # comment-picker-bot
-A bot for picking random comments, likely for Telegram or similar platforms.
+A bot for picking random comments from public Telegram channels.
 
 # installation
 
