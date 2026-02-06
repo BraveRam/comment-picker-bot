@@ -34,7 +34,7 @@ def register_handlers(bot_client, user_client, db_pool=None):
     @bot_client.on(events.NewMessage(incoming=True, pattern=r"^/help$"))
     async def handle_help(event):
         await event.reply(
-            "How it works:\n"
+            "How the bot works:\n"
             "1. Send a public post link\n"
             "2. Choose the pool size (top 5/10/20/50/100 or all)\n"
             "3. Tap 'Pick winner' to select a random comment"
